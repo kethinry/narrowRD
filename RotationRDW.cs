@@ -11,7 +11,7 @@ public class RotationRDW : MonoBehaviour
 
     void Start()
     {
-        head = transform.Find("RealUser").Find("HMD");
+        //head = transform.Find("RealUser").Find("HMD");
         //lastPos = GetRelativePosition(head.position, this.transform);
         lastDir = Quaternion.Inverse(transform.rotation) * head.forward;
         headfor = head.forward;
@@ -29,7 +29,7 @@ public class RotationRDW : MonoBehaviour
         //Debug.Log("POS" + tempPos.ToString("F3"));
         //Debug.Log("dis" + displacement.ToString("F3"));
         if (angle != 0)
-            transform.Rotate(2 * Vector3.up * angle);
+            transform.Rotate(10 * Vector3.up * angle);
         lastDir = tmpDir;
     }
 }

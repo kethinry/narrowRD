@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PIDController : MonoBehaviour
+public class PIDControl : MonoBehaviour
 {
     // Start is called before the first frame update
     public float LastErrorPos;
@@ -28,7 +28,7 @@ public class PIDController : MonoBehaviour
     public Transform person;
     void Start()
     {
-        Application.targetFrameRate = 1;
+        //Application.targetFrameRate = 1;
         LastPos = person.position;
         LastVRangle = 0;
         LastRealDir = person.TransformDirection(person.forward);

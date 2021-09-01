@@ -22,12 +22,12 @@ public class KeyboardCTL : MonoBehaviour
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(Vector3.right * 0.1f, Space.Self);
+            transform.Translate(Vector3.back * 0.1f, Space.Self);
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(Vector3.left * 0.1f, Space.Self);
+            transform.Translate(Vector3.forward * 0.1f, Space.Self);
         }
 
         if (Input.GetKey(KeyCode.D))
